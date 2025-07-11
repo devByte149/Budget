@@ -10,7 +10,7 @@
     }
     
     function get_all_bills(PDO $pdo) {
-        $stmt = $pdo->query("SELECT * FROM Bill");
+        $stmt = $pdo->query("SELECT * FROM bill");
         // 1. Fetch all data as a simple associative array
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $bills = []; // Create an empty array to hold our objects
